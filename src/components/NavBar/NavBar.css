@@ -1,0 +1,23 @@
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    background: cornflowerblue;
+    color: white;
+}
+a{
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    margin-right: 20px;
+}
+.logo{
+    margin-right: 9rem !important;
+    color: orangered !important;
+    font-weight: bold;
+}
+.dropdown-item:hover{
+    background-color: rgb(247, 132, 90) !important;
+}
