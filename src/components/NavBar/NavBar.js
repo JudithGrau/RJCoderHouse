@@ -1,7 +1,8 @@
 import React from 'react'
 import './NavBar.css'
 import { Nav, Navbar, Container, NavDropdown } from 'react-bootstrap'
-import {CartWidget} from './CartWidget'
+import logo from './logo.png'
+import {CartWidget} from './CartWidget/CartWidget'
 
 export const NavBar = () => {
 
@@ -9,7 +10,7 @@ export const NavBar = () => {
     return (
         <Navbar bg="light" expand="lg">
         <Container>
-        <Navbar.Brand href="#home" className="logo pr-5">Mi tienda</Navbar.Brand>
+        <Navbar.Brand href="#home" className="logo pr-5"><img src={logo} alt="cart" width="50px"/>Tienda Anime</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">

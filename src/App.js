@@ -6,10 +6,10 @@ import { ItemListContainer } from "./components/ItemListContainer/ItemListContai
 function App() {
 
   return (
-    <div>
+    <>
       <NavBar/>
-      <ItemListContainer saludo="Bienvenidos a mi Tienda!"/>
-    </div>
+      <ItemListContainer/>
+    </>
     
   );
 }
