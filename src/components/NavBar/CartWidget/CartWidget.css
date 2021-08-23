@@ -1,7 +1,11 @@
-.cartWidget{
+.cartWidget img{
     font-size: 30px;
 }
 span{
     font-size: 18px;
     font-weight: 700;
+}
+.cartWidget a{
+    color: orangered;
+    text-decoration: none;
 }
