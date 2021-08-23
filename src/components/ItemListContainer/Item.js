@@ -1,7 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './ItemListContainer.css'
 
-export const Item = ( {img, nombre, desc, precio} ) => {
+export const Item = ( { id, img, nombre, desc, precio} ) => {
 
 
     return (
@@ -10,6 +11,7 @@ export const Item = ( {img, nombre, desc, precio} ) => {
             <h3 className="title text-center">{nombre}</h3>
             <p className="text-center">{desc}</p>
             <p className="text-center">$ {precio}</p>
+            <Link to={`/detail/${id}`} className="btn btn-outline-primary">Ver más</Link>
         </div>
     )
 }

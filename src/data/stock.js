@@ -49,7 +49,7 @@ export const stock = [
         img: "https://d26lpennugtm8s.cloudfront.net/stores/903/627/products/akatsiki-121-e95df7ff2fc1e3b5b915808666625216-1024-1024.jpg"
     },
     {
-        id: 4,
+        id: 7,
         category: 'buzos',
         nombre: "Buzo Anime 1",
         precio: 3900,
@@ -57,7 +57,7 @@ export const stock = [
         img: "https://d26lpennugtm8s.cloudfront.net/stores/903/627/products/campera-espalda1-f733502a11d45bf78415842980858960-1024-1024.jpg"
     },
     {
-        id: 4,
+        id: 8,
         category: 'buzos',
         nombre: "Buzo Anime 2",
         precio: 3900,
@@ -65,7 +65,7 @@ export const stock = [
         img: "https://i.pinimg.com/originals/1e/39/32/1e3932040947d1810cd3f74d88c9962b.jpg"
     },
     {
-        id: 4,
+        id: 9,
         category: 'buzos',
         nombre: "Buzo Anime 3",
         precio: 3900,

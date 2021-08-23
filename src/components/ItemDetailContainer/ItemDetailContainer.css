@@ -1,0 +1,18 @@
+.imgProd{
+    width: 400px;
+}
+.card_item{
+    display: flex;
+    
+}
+.productDetail{
+    background: rgba(255, 255, 0, 0.966);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin-top: 9em;
+}
+h2{
+    text-align: left;
+}

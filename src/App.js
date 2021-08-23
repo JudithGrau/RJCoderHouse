@@ -3,6 +3,7 @@ import './styles/styles.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { ItemListContainer } from "./components/ItemListContainer/ItemListContainer";
 import {BrowserRouter, Switch, Route, Redirect} from 'react-router-dom'
+import { ItemDetailContainer } from "./components/ItemDetailContainer/ItemDetailContainer";
 
 
 function App() {
@@ -21,9 +22,9 @@ function App() {
                 <ItemListContainer/>
             </Route>
 
-            {/* <Route exact path="/detail/:itemId">
+            <Route exact path="/detail/:itemId">
                 <ItemDetailContainer/>
-            </Route> */}
+            </Route>
 
             <Route exact path="/nosotros">
                 <h1>Nosotros</h1>
