@@ -38,6 +38,10 @@ function App() {
                 <h1>Carrito - Proximamente</h1>
             </Route>
 
+            {/* <Route path="*">
+                    <h1>Error 404</h1>
+                </Route> */}
+
             <Route path="*">
                 <Redirect to="/"/>
             </Route>
