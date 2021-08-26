@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# Tienda Anime
+### Bienvenidos al repositorio de la web "Tienda Anime" !! 😉
+Este es el proyecto final del **React** en **Coderhouse**.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+​
+Tienda Anime es una e-commerce para la venta de Remeras y Buzos exclusivamente de tipo anime.👕
 
-## Available Scripts
+## Conocimientos trabajados:
 
-In the project directory, you can run:
+- Instalación y configuración del entorno (Creación  de la App utilizando el CLI).
+- JSX & transpiling & Componentes I (Menú e-commerce).
+- Componentes II & Promises, Asincronía y Map (Catálogo de productos).
+- Consumo de APIs & Routing y Navegación (Detalle del producto).
 
-### `npm start`
+## ​Próximos conocimientos a trabajar:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Eventos & Context (CartContext y sincronizar counter)
+- Técnicas de rendering & Utilizando Firebase (Cart View e Item Collection)
+- Firebase II (Item Collection II)
+​
+## Instalación
+​
+1. Forkeá y cloná el repositorio
+​
+2. Parado en la raíz del proyecto corré el comando 
+​
+   ```
+   npm install
+   ```
+​
+para instalar todas las dependecias del proyecto
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+3. Usá 
+​
+   ```
+   npm start
+   ```
+​
+    para correr el proyecto, que estará disponible en http://localhost:3000
+​
+​
+​
+## Dependencias
+​
+Uso de Bootstrap para dar formato a la aplicación.
+​
+Uso de React Router Dom para la navegación
+​
+Uso de reactstrap para el loading
+​
 
-### `npm test`
+## Podrás ver mi Página web siguiendo los siguientes enlaces: 🧐
+https://github.com/JudithGrau/RJCoderHouse/
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Tienda Anime en funcionamiento
+<p align="center">
+    <img width="600" src="src/assets/to_readme/TiendaAnime.gif">
+</p>
 
-### `npm run build`
+​
+### Autora:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+​
+**Judith Grau**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+​
+2021 - Curso de React en CoderHouse
