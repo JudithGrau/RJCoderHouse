@@ -43,14 +43,16 @@ para instalar todas las dependecias del proyecto
 ## Dependencias
 ​
 Uso de Bootstrap para dar formato a la aplicación.
+
 ​
 Uso de React Router Dom para la navegación
+
 ​
 Uso de reactstrap para el loading
 ​
 
 ## Podrás ver mi Página web siguiendo los siguientes enlaces: 🧐
-https://github.com/JudithGrau/RJCoderHouse/
+https://judithgrau.github.io/RJCoderHouse/ 
 
 - Tienda Anime en funcionamiento
 <p align="center">
