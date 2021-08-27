@@ -17,3 +17,6 @@
     border: 10px solid currentColor !important;
     border-right-color: transparent !important;
 }
+p{
+    color: white;
+}

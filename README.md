@@ -3,7 +3,7 @@
 Este es el proyecto final del **React** en **Coderhouse**.
 
 ​
-Tienda Anime es una e-commerce para la venta de Remeras y Buzos exclusivamente de tipo anime.👕
+Tienda Anime es una e-commerce para la venta de Remeras y Buzos estampados con personajes de animé.👕
 
 ## Conocimientos trabajados:
 
@@ -46,12 +46,11 @@ Uso de Bootstrap para dar formato a la aplicación.
 
 ​
 Uso de React Router Dom para la navegación
-
-​
-Uso de reactstrap para el loading
 ​
 
-## Podrás ver mi Página web siguiendo los siguientes enlaces: 🧐
+## Podrás ver mi Repositorio y mi App siguiendo los siguientes enlaces: 🧐
+https://github.com/JudithGrau/RJCoderHouse/
+
 https://judithgrau.github.io/RJCoderHouse/ 
 
 - Tienda Anime en funcionamiento

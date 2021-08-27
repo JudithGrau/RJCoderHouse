@@ -1,5 +1,6 @@
 import React from 'react'
-import { Spinner } from 'reactstrap'
+import { Spinner } from 'react-bootstrap'
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Loading.css'
 
@@ -7,7 +8,7 @@ export const Loading = () => {
     return (
         <div className="divPadre">
             <div className="divHijo">
-                <Spinner color="warning" className="spinnerReactstrap"/>
+                <Spinner animation="border" role="status" variant="warning" className="spinnerReactstrap" /> <p>Cargando...</p>
             </div>
         </div>
     )
