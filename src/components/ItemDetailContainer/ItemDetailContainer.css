@@ -3,7 +3,10 @@
 }
 .card_item{
     display: flex;
-    
+}
+.text_card {
+    color: #111;
+    font-weight: bold;
 }
 .productDetail{
     background: rgba(255, 255, 0, 0.966);

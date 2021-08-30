@@ -20,9 +20,7 @@ export const NavBar = () => {
 
                         <NavDropdown title="Productos" id="basic-nav-dropdown">
                         {categories.map( category => {
-
-                        return <NavDropdown.Item as={NavLink} exact to={category.path} activeClassName="active">{category.text}</NavDropdown.Item>
-
+                        return <NavDropdown.Item as={NavLink} key={category.path} exact to={category.path} activeClassName="active">{category.text}</NavDropdown.Item>
                         })}
                         </NavDropdown>
                         
