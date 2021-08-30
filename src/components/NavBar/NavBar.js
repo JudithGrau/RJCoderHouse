@@ -6,7 +6,7 @@ import logo from './logo.png'
 import {CartWidget} from './CartWidget/CartWidget'
 
 export const NavBar = () => {
-
+    const categories = [ { path: "/category/remeras", text: "Remeras" }, { path: "/category/buzos", text: "Buzos" } ]
 
     return (
         <header>
@@ -17,10 +17,15 @@ export const NavBar = () => {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
                         <Nav.Link as={NavLink} exact to={"/"} activeClassName="active">Home</Nav.Link>
+
                         <NavDropdown title="Productos" id="basic-nav-dropdown">
-                            <NavDropdown.Item as={NavLink} exact to={"/category/remeras"} activeClassName="active">Remeras</NavDropdown.Item>
-                            <NavDropdown.Item as={NavLink} exact to={"/category/buzos"} activeClassName="active">Buzos</NavDropdown.Item>
+                        {categories.map( category => {
+
+                        return <NavDropdown.Item as={NavLink} exact to={category.path} activeClassName="active">{category.text}</NavDropdown.Item>
+
+                        })}
                         </NavDropdown>
+                        
                         <Nav.Link as={NavLink} exact to={"/nosotros"} activeClassName="active">Nosotros</Nav.Link>
                         <Nav.Link as={NavLink} exact to={"/contacto"} activeClassName="active">Contacto</Nav.Link>
                         </Nav>
