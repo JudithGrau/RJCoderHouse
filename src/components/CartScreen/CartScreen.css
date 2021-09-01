@@ -1,0 +1,18 @@
+.imgProd{
+    width: 65%;
+}
+.textCard{
+    background: rgba(255, 255, 0, 0.966);
+    color: orangered;
+}
+.textCardP{
+    color: #111;
+}
+.trash{
+    color: red;
+    height: 1.5em;
+    width: 1.5em;
+}
+.containerCard{
+    max-width: 13rem;
+}
