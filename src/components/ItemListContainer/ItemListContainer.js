@@ -13,7 +13,6 @@ export const ItemListContainer = () => {
     const { catId } = useParams()
 
     const [data, setData] = useState([])
-    /* const [loading, setLoading] = useState(false) */
     
     useEffect( ()=> {
         setLoading(true)
