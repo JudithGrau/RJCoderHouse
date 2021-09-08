@@ -1,11 +1,19 @@
 import React, { useContext } from 'react'
 import { CartContext } from '../../context/CartContext'
 import { BsFillTrashFill } from 'react-icons/bs'
+import { Link } from 'react-router-dom'
 import './CartScreen.css'
+
 
 export const CartScreen = () => {
 
     const {carrito, eliminarDelCarrito, vaciarCarrito} = useContext(CartContext)
+    if (carrito < 1) {
+        return <div className="alert alert-danger pt-5" role="alert">
+                <h4 class="alert-heading pb-5">El carrito está vacío, agrega algo!</h4>
+                <Link to={`/`} className="btn btn-warning m-5">Agrega algo al carrito</Link>
+            </div>
+    }
 
     return (
         <>
