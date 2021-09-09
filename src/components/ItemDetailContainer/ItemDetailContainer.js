@@ -22,6 +22,9 @@ export const ItemDetailContainer = () => {
 
         item.get()
             .then((doc) => {
+                if(!doc.exists) {
+                    alert("No existe el item")
+                }
             setItem( {...doc.data(), id: doc.id} )
             })
             .finally(()=> { setLoading(false)})
