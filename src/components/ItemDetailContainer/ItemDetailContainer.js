@@ -23,9 +23,10 @@ export const ItemDetailContainer = () => {
         item.get()
             .then((doc) => {
                 if(!doc.exists) {
-                    alert("No existe el item")
+                    setItem(undefined);
+                }else{
+                    setItem( {...doc.data(), id: doc.id} );
                 }
-            setItem( {...doc.data(), id: doc.id} )
             })
             .finally(()=> { setLoading(false)})
 
@@ -35,9 +36,13 @@ export const ItemDetailContainer = () => {
 
     return (
         <div>
-            {loading 
-                ? <div><Loading /></div>
-                : <ItemDetail {...item}/>
+            {loading ? (
+                <div>
+                    <Loading />
+                </div>
+            ) : item ? (<ItemDetail {...item}/>
+                ):(<h1>No se encontró el item</h1>)
+                 
             }
         </div>
     )
