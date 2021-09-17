@@ -13,11 +13,8 @@ Tienda Anime es una e-commerce para la venta de Remeras y Buzos estampados con p
 - Consumo de APIs & Routing y Navegación (Detalle del producto).
 - Eventos & Context (CartContext y sincronizar counter)
 - Técnicas de rendering & Utilizando Firebase (Cart View e Item Collection)
-
-## ​Próximos conocimientos a trabajar:
-
 - Firebase II (Item Collection II)
-​
+
 ## Instalación
 ​
 1. Forkeá y cloná el repositorio
