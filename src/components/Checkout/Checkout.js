@@ -3,7 +3,7 @@ import { Redirect } from 'react-router'
 import Swal from 'sweetalert2'
 import { CartContext } from '../../context/CartContext'
 import { generarOrden } from '../../firebase/generarOrden'
-
+import './Checkout.css'
 
 export const Checkout = () => {
 
@@ -25,16 +25,15 @@ export const Checkout = () => {
     const handleSubmit = (e) => {
         e.preventDefault()
 
-        if (values.nombre.length > 3 && values.email.length > 7 && values.tel.length > 8) {
+        if (values.nombre.length > 3 && values.email.length > 7 && values.tel.length >= 8) {
             generarOrden(values, carrito, totalCarrito())
                 .then( res => {
                     Swal.fire({
                         icon: 'success',
-                        title: 'Su compra fue registrada!',
-                        text: `Guarde este identificador: ${res}`,
+                        title: 'La compra fue registrada!',
+                        text: `Su número de Orden es: ${res}`,
                         confirmButtonText: 'OK'
                     })
-
                     vaciarCarrito()
                 })
                 .catch( err => {
@@ -47,11 +46,7 @@ export const Checkout = () => {
                 text: 'Revise su información'
             })
         }
-
-
     }
-
-    
 
     return (
         <div>
@@ -62,34 +57,52 @@ export const Checkout = () => {
             ? <Redirect to="/"/>
             :
             <div>
-                <form onSubmit={handleSubmit}>
-                    <input
-                        type="text"
-                        value={values.nombre}
-                        onChange={handleInputChange}
-                        name="nombre"
-                        required
-                    />
-                    <input
-                        type="email"
-                        value={values.email}
-                        onChange={handleInputChange}
-                        name="email"
-                        required
-                    />
-                    <input
-                        type="tel"
-                        value={values.tel}
-                        onChange={handleInputChange}
-                        name="tel"
-                        required
-                    />
-                    
-                    <button type="submit">Submit</button>
-                </form>
+                <div className="form-container">
+                    <div className="app-wrapper">
+                        <div>
+                            <h2 className="title">Create Order</h2>
+                        </div>
+                        <form className="form-wrapper" onSubmit={handleSubmit}>
+                            <div className="name">
+                                <label className="label">Full Name </label>
+                                <input className="input"
+                                    type="text"
+                                    value={values.nombre}
+                                    onChange={handleInputChange}
+                                    name="nombre"
+                                    required
+                                />
+                            </div>
+                            <div className="email">
+                                <label className="label">Email </label>
+                                <input className="input"
+                                    type="email"
+                                    value={values.email}
+                                    onChange={handleInputChange}
+                                    name="email"
+                                    required
+                                />
+                            </div>
+                            <div className="telefono">
+                                <label className="label">Teléfono </label>
+                                <input className="input"
+                                    type="tel"
+                                    value={values.tel}
+                                    onChange={handleInputChange}
+                                    name="tel"
+                                    required
+                                />
+                            </div>
+                            <div>
+                                <button className="submit" type="submit">Submit</button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+
             </div>
         }
-
         </div>
     )
 }

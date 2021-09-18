@@ -2,6 +2,7 @@ import { getFirestore } from '../firebase/config'
 import Swal from 'sweetalert2'
 import firebase from "firebase/app";
 import 'firebase/firestore'
+import '../components/Checkout/Checkout.css'
 
 export const generarOrden =  (buyer, carrito, total) => {
 
