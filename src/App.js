@@ -7,6 +7,7 @@ import { ItemDetailContainer } from "./components/ItemDetailContainer/ItemDetail
 import { CartProvider } from "./context/CartContext";
 import { CartScreen } from "./components/CartScreen/CartScreen";
 import { UIContextProvider } from "./context/UIContext";
+import { Checkout } from "./components/Checkout/Checkout";
 
 function App() {
 
@@ -41,9 +42,9 @@ function App() {
                   <CartScreen/>
                 </Route>
 
-                {/* <Route path="*">
-                        <h1>Error 404</h1>
-                    </Route> */}
+                <Route exact path="/checkout">
+                  <Checkout/>
+                </Route>
 
                 <Route path="*">
                     <Redirect to="/"/>

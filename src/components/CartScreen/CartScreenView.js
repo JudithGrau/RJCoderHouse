@@ -3,6 +3,7 @@ import { CartContext } from '../../context/CartContext'
 import './CartScreen.css'
 
 import { BsFillTrashFill } from 'react-icons/bs'
+import { Link } from 'react-router-dom'
 
 
 export const CartScreenView = ( {productos = []} ) => {
@@ -22,7 +23,8 @@ export const CartScreenView = ( {productos = []} ) => {
                             <h4>{prod.nombre}</h4>
                             <p className="textCardP">Cantidad: {prod.cantidad}</p>
                             <p className="textCardP">Precio Total: ${prod.precio * prod.cantidad}</p>
-                            <BsFillTrashFill className="trash" onClick={() => eliminarDelCarrito(prod.id)}/>
+                            <button className="btn"><BsFillTrashFill className="trash" onClick={() => eliminarDelCarrito(prod.id)}/></button>
+                            
                         </div>
                     </div>
                 ))}
@@ -31,6 +33,11 @@ export const CartScreenView = ( {productos = []} ) => {
             <hr/>
 
             <button className="btn btn-danger" onClick={vaciarCarrito}>Vaciar carrito</button>
+            <Link to="/checkout">
+                <button className="btn btn-success mx-3">
+                    Terminar mi compra
+                </button>
+            </Link>
         </section>
         
 

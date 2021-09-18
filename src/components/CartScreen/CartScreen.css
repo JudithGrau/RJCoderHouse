@@ -10,8 +10,12 @@
 }
 .trash{
     color: red;
+    background: white;
     height: 1.5em;
     width: 1.5em;
+}
+.trash:hover{
+    color: #111;
 }
 .containerCard{
     max-width: 13rem;
