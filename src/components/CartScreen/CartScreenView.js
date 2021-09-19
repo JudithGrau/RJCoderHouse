@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 
 
 export const CartScreenView = ( {productos = []} ) => {
-    const {carrito, eliminarDelCarrito, vaciarCarrito} = useContext(CartContext)
+    const {carrito, eliminarDelCarrito, vaciarCarrito, totalCarrito} = useContext(CartContext)
 
 
     return (
@@ -24,13 +24,14 @@ export const CartScreenView = ( {productos = []} ) => {
                             <p className="textCardP">Cantidad: {prod.cantidad}</p>
                             <p className="textCardP">Precio Total: ${prod.precio * prod.cantidad}</p>
                             <button className="btn"><BsFillTrashFill className="trash" onClick={() => eliminarDelCarrito(prod.id)}/></button>
-                            
                         </div>
+
                     </div>
                 ))}
                 </div>
             </div>
             <hr/>
+            <h4>Total compra: $ {totalCarrito()}</h4>
 
             <button className="btn btn-danger" onClick={vaciarCarrito}>Vaciar carrito</button>
             <Link to="/checkout">
