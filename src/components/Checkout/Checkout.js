@@ -12,7 +12,7 @@ export const Checkout = () => {
     const [values, setValues] = useState({
         nombre: '',
         email: '',
-        tel: 0,
+        tel: '',
     })
 
     const handleInputChange = (e) => {

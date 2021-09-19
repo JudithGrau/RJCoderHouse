@@ -8,7 +8,7 @@ export const Loading = () => {
     return (
         <div className="divPadre">
             <div className="divHijo">
-                <Spinner animation="border" role="status" variant="warning" className="spinnerReactstrap" /> <p>Cargando...</p>
+                <Spinner animation="border" role="status" variant="warning" className="spinner" /> <p>Cargando...</p>
             </div>
         </div>
     )

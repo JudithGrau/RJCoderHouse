@@ -44,9 +44,6 @@ h2{
     border-bottom-style: 20px solid black;
     margin-bottom: 10px;
 }
-.error{
-    color: red;
-}
 .submit{
     display: flex;
     text-transform: uppercase;
@@ -65,13 +62,6 @@ h2{
 }
 button:active{
     transform: translateY(2px);
-}
-.form-success{
-    display: flex;
-    justify-content: center;
-    margin-top: 250px;
-    min-width: 370px;
-    color: #f80759;
 }
 .swal2-styled.swal2-confirm{
     background: orangered;
