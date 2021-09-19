@@ -40,8 +40,11 @@ para instalar todas las dependecias del proyecto
 ## Dependencias
 ​
 Uso de Bootstrap para dar formato a la aplicación.
+
 Uso de react-icons para los íconos.
-​Uso de sweetalert2 para mostrar mensajes en pantalla.
+
+Uso de sweetalert2 para mostrar mensajes en pantalla.
+
 Uso de React Router Dom para la navegación.
 ​
 
