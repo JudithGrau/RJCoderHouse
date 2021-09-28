@@ -25,6 +25,7 @@ h2{
 }
 .name,
 .email,
+.confirmEmail,
 .telefono{
     margin: 20px;
     color: #969292;

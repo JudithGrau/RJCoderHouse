@@ -6,7 +6,7 @@ import { BsFillTrashFill } from 'react-icons/bs'
 import { Link } from 'react-router-dom'
 
 
-export const CartScreenView = ( {productos = []} ) => {
+export const CartScreenView = () => {
     const {carrito, eliminarDelCarrito, vaciarCarrito, totalCarrito} = useContext(CartContext)
 
 

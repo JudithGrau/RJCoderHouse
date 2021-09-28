@@ -1,6 +1,6 @@
 # Tienda Anime
 ### Bienvenidos al repositorio de la web "Tienda Anime" !! 😉
-Este es el proyecto final del **React** en **Coderhouse**.
+Este es el proyecto final del curso de **React** (camada 16930) en **Coderhouse**.
 
 ​
 Tienda Anime es una e-commerce para la venta de Remeras y Buzos estampados con personajes de animé.👕

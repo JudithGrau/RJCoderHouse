@@ -12,6 +12,7 @@ export const Checkout = () => {
     const [values, setValues] = useState({
         nombre: '',
         email: '',
+        confirmEmail: '',
         tel: '',
     })
 
@@ -25,7 +26,7 @@ export const Checkout = () => {
     const handleSubmit = (e) => {
         e.preventDefault()
 
-        if (values.nombre.length > 3 && values.email.length > 7 && values.tel.length >= 8) {
+        if (values.nombre.length > 3 && values.email.length > 7 && values.tel.length >= 8 && ((values.email.length >0 && values.email === values.confirmEmail)) ) {
             generarOrden(values, carrito, totalCarrito())
                 .then( res => {
                     Swal.fire({
@@ -80,6 +81,16 @@ export const Checkout = () => {
                                     value={values.email}
                                     onChange={handleInputChange}
                                     name="email"
+                                    required
+                                />
+                            </div>
+                            <div className="confirmEmail">
+                                <label className="label">Confirm Email </label>
+                                <input className="input"
+                                    type="email"
+                                    value={values.confirmEmail}
+                                    onChange={handleInputChange}
+                                    name="confirmEmail"
                                     required
                                 />
                             </div>
