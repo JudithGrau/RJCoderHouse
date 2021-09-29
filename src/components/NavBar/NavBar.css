@@ -18,6 +18,13 @@ a{
     color: orangered !important;
     font-weight: bold;
 }
+.img_logo{
+    font-weight: 600;
+}
+.navbar-brand {
+    
+    margin-right: 12rem !important;
+}
 .dropdown-item:hover{
     background-color: rgb(247, 132, 90) !important;
 }

@@ -12,7 +12,7 @@ export const NavBar = () => {
         <header>
             <Navbar bg="light" expand="lg">
                 <Container>
-                    <Navbar.Brand as={NavLink} exact to={"/"} activeClassName="logo"><img src={logo} alt="cart" width="50px"/>Tienda Anime</Navbar.Brand>
+                    <Navbar.Brand as={NavLink} exact to={"/"} activeClassName="logo "><img src={logo} alt="cart" className="img_logo mr-5" width="50px"/>Tienda Anime</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">

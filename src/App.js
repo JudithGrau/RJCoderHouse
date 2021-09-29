@@ -4,12 +4,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { ItemListContainer } from "./components/ItemListContainer/ItemListContainer";
 import {BrowserRouter, Switch, Route, Redirect} from 'react-router-dom'
 import { ItemDetailContainer } from "./components/ItemDetailContainer/ItemDetailContainer";
+import { About } from './components/About/About';
 import { CartProvider } from "./context/CartContext";
 import { CartScreen } from "./components/CartScreen/CartScreen";
 import { UIContextProvider } from "./context/UIContext";
 import { Checkout } from "./components/Checkout/Checkout";
 
 function App() {
+
+  let about = 'Tienda Anime es una empresa de venta de Remeras y Buzos estampados con personajes de animé.'
 
   return (
     <>
@@ -31,7 +34,7 @@ function App() {
                 </Route>
 
                 <Route exact path="/nosotros">
-                    <h1>Nosotros</h1>
+                    <About greeting={about} />    
                 </Route>
 
                 <Route exact path="/contacto">
