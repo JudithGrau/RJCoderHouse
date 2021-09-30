@@ -31,14 +31,19 @@ export const CartScreenView = () => {
                 </div>
             </div>
             <hr/>
-            <h4>Total compra: $ {totalCarrito()}</h4>
-
-            <button className="btn btn-danger" onClick={vaciarCarrito}>Vaciar carrito</button>
-            <Link to="/checkout">
-                <button className="btn btn-success mx-3">
+            <h4 className="text-center col-6">Total compra: $ {totalCarrito()}</h4>
+            <div className="lol col-7">
+                <button className="btn_cartScreen vaciar_carrito" onClick={vaciarCarrito}>
+                Vaciar carrito
+            </button>
+            <Link to="/checkout" className="text-decoration-none">
+                <button className="btn_cartScreen terminar_compra mx-3">
                     Terminar mi compra
                 </button>
             </Link>
+            </div>
+
+            
         </section>
         
 

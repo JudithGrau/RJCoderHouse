@@ -25,7 +25,7 @@ export const ItemListContainer = () => {
             filtrado.get()
                 .then((response) => {
                     const data = response.docs.map((doc) => ({...doc.data(), id: doc.id}))
-                    console.log(data)
+                    /* console.log(data) */
                     setData(data)
                 })
                 .finally(()=> {
@@ -35,7 +35,7 @@ export const ItemListContainer = () => {
             productos.get()
                 .then((response) => {
                     const data = response.docs.map((doc) => ({...doc.data(), id: doc.id}))
-                    console.log(data)
+                    /* console.log(data) */
                     setData(data)
                 })
                 .finally(()=> {

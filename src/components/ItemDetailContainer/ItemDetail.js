@@ -23,7 +23,7 @@ export const ItemDetail = ({category, id, nombre, desc, img, precio, stock}) => 
                     <img className="imgProd" src={img} alt={nombre}/>
                 </div>
                 <div className="col-md-6 d-block">
-                    <h2>{nombre}</h2>
+                    <h2 className="titulo_detail">{nombre}</h2>
                     <p className="text_card">{desc}</p>
                     <p className="text_card">Precio: ${precio}</p>
                     <Counter

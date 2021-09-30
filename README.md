@@ -15,6 +15,7 @@ Tienda Anime es una e-commerce para la venta de Remeras y Buzos estampados con p
 - Técnicas de rendering & Utilizando Firebase (Cart View e Item Collection)
 - Firebase II (Item Collection II)
 
+
 ## Instalación
 ​
 1. Forkeá y cloná el repositorio
@@ -46,6 +47,8 @@ Uso de react-icons para los íconos.
 Uso de sweetalert2 para mostrar mensajes en pantalla.
 
 Uso de React Router Dom para la navegación.
+
+Uso de Firebase para almacenar y sincronizar datos en una base de datos en tiempo real.
 ​
 
 ## Podrás ver mi Repositorio y mi App siguiendo los siguientes enlaces: 🧐
@@ -55,7 +58,7 @@ https://judithgrau.github.io/RJCoderHouse/
 
 - Tienda Anime en funcionamiento
 <p align="center">
-    <img width="600" src="src/assets/to_readme/TiendaAnime.gif">
+    <img width="600" src="src/assets/to_readme/Tienda_Anime.gif">
 </p>
 
 ​

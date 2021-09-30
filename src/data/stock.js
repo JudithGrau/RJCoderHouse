@@ -1,5 +1,5 @@
 
-export const stock = [
+/* export const stock = [
     {
         id: 1,
         category: 'remeras',
@@ -81,4 +81,4 @@ export const stock = [
         img: "https://d26lpennugtm8s.cloudfront.net/stores/903/627/products/hentai1-303f4ac693bba2cf3615901217769480-640-0.jpg",
         stock: 10
     }
-]
+] */

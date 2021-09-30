@@ -11,7 +11,7 @@ export const CartScreen = () => {
     if (carrito < 1) {
         return <div className="alert alert-danger pt-5" role="alert">
                 <h4 className="alert-heading pb-5">El carrito está vacío, agrega algo!</h4>
-                <Link to={`/`} className="btn btn-warning m-5">Agrega algo al carrito</Link>
+                <Link to={`/`} className="btn_cartScreen agregar_algo col-4 m-5">Agrega algo al carrito</Link>
             </div>
     }
 

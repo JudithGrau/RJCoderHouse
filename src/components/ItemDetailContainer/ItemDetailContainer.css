@@ -16,9 +16,10 @@
     width: 100%;
     margin-top: 9em;
 }
-h2{
+.titulo_detail{
     text-align: left;
 }
+
 @media screen and (max-width: 768px) {
     .productDetail{
         display: flex;
