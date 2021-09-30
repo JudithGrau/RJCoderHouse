@@ -1,5 +1,7 @@
 .cartWidget img{
+    background: white;
     font-size: 30px;
+    border-radius: 0;
 }
 span{
     font-size: 18px;
@@ -9,3 +11,4 @@ span{
     color: orangered;
     text-decoration: none;
 }
+

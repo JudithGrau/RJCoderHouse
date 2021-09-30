@@ -5,6 +5,7 @@ import { ItemListContainer } from "./components/ItemListContainer/ItemListContai
 import {BrowserRouter, Switch, Route, Redirect} from 'react-router-dom'
 import { ItemDetailContainer } from "./components/ItemDetailContainer/ItemDetailContainer";
 import { About } from './components/About/About';
+import { Footer } from './components/Footer/Footer'
 import { CartProvider } from "./context/CartContext";
 import { CartScreen } from "./components/CartScreen/CartScreen";
 import { UIContextProvider } from "./context/UIContext";
@@ -37,10 +38,6 @@ function App() {
                     <About greeting={about} />    
                 </Route>
 
-                <Route exact path="/contacto">
-                    <h1>Contacto</h1>
-                </Route>
-
                 <Route exact path="/cart">
                   <CartScreen/>
                 </Route>
@@ -53,7 +50,7 @@ function App() {
                     <Redirect to="/"/>
                 </Route>
             </Switch>
-
+            <Footer />
           </BrowserRouter>
         </CartProvider>
       </UIContextProvider>

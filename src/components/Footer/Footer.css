@@ -1,0 +1,61 @@
+.footer {
+  width: 100%;
+  background: #202020;
+  color: white;
+}
+.container-footer-all{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 10px 0 10px;
+}
+.container-body{
+  display: flex;
+  justify-content: space-around;
+}
+.column1{
+  max-width: 700px;
+}
+.column1 h1{
+  font-size: 14px;
+  color: #c7c7c7;
+  margin-top: 20px;
+}
+.column2{
+  max-width: 500px;
+}
+.column2 .fila{
+  margin-top: 20px;
+  display: flex;
+}
+.icono1, .icono2, .icono3{
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+}
+.icono1{
+  background: rgba(255, 218, 0, 0.966);
+}
+.icono1:hover{
+  background: rgba(247, 239, 128, 0.966);
+}
+.icono3{
+  background: orangered;
+}
+.icono3:hover{
+  background: rgb(247, 95, 39);
+}
+.icono2{
+  background: rgb(255, 136, 0);
+}
+.icono2:hover{
+  background: rgb(248, 158, 54);
+}
+
+.fila label{
+  margin-top: 10px;
+  margin-left: 10px;
+  color: #c7c7c7;
+}
+.container-footer{
+  width: 100%;
+}

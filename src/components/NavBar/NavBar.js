@@ -25,7 +25,6 @@ export const NavBar = () => {
                         </NavDropdown>
                         
                         <Nav.Link as={NavLink} exact to={"/nosotros"} activeClassName="active">Nosotros</Nav.Link>
-                        <Nav.Link as={NavLink} exact to={"/contacto"} activeClassName="active">Contacto</Nav.Link>
                         </Nav>
                         <CartWidget/>
                     </Navbar.Collapse>
