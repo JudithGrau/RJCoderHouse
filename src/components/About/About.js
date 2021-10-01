@@ -5,7 +5,7 @@ import './About.css'
 
 export const About = ({ greeting }) => {
   return (
-    <Container fluid className='text-center'>
+    <Container fluid className='text-center nosotros'>
       <Row className="mt-5">
         
         <h1 className='title text-center mt-5'>Sobre nosotros</h1>
